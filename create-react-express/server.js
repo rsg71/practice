@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 const mongoose = require("mongoose");
-const apiRoutes = require("./routes/apiRoutes");
+const routes = require("./routes")
 
 
 
@@ -27,7 +27,7 @@ mongoose.connect(
 
 
 // Use apiRoutes
-app.use("/api", apiRoutes);
+app.use(routes);
 
 
 
