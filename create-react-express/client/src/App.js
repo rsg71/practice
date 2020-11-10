@@ -8,7 +8,7 @@ function App() {
  const handleButtonClick = event => {
    event.preventDefault();
 
-   API.getOrders().then(res => console.log(res))
+   API.getOrders().then(res => console.log(res.data))
 
 
  }
